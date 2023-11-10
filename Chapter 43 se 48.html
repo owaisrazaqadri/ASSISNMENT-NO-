@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Add some basic styling for better presentation */
+        img {
+            width: 300px;
+            height: auto;
+            transition: transform 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="counter">0</h1>
+    <button onclick="updateCounter(1)">Increase</button>
+    <button onclick="updateCounter(-1)">Decrease</button>
+<a //href="https://www.youtube.com/@muhammadowaistv/videos" //onclick="showAlert()">Click me</a>
+
+
+
+
+<img /src="https://unsplash.com/photos/silver-iphone-6-on-white-textile-bqy6s0fb_Co" /alt="Mobile /1" /onclick="showPurchaseMessage()">
+<img /src="https://unsplash.com/photos/a-close-up-of-a-cell-phone-on-a-table-vn6A4UKMR3I" /alt="Mobile /2" /onclick="showPurchaseMessage()">
+<img /src="https://unsplash.com/photos/silver-ipad-on-silver-ipad-smVUoz8CSCw" /alt="Mobile /3" /onclick="showPurchaseMessage()">
+
+
+
+
+<table id="studentTable">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Grade</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+
+
+
+        <img /src="https://unsplash.com/photos/silver-ipad-on-silver-ipad-smVUoz8CSCw" /alt="Image /1" /onmouseover="this.src='image2.jpg'; /this.style.transform='scale(1.1)'" /onmouseout="this.src='image1.jpg'; /this.style.transform='scale(1)'">
+
+
+
+        <!-- JavaScript will populate this section -->
+    </tbody>
+</table>
+
+
+   <script>
+    //Question No.1
+
+       /* function showAlert() {
+            alert("Hello! You clicked the link.");
+       }
+        showAlert();
+        */
+
+        //Question No.2
+        /*
+        function showPurchaseMessage() {
+            alert("Thanks For Purchasing!");
+        }
+        showPurchaseMessage();
+*/
+        //Question No.3
+
+        /*function createTable() {
+            var tableBody = document.getElementById('studentTable').getElementsByTagName('tbody')[0];
+
+            for (var i = 1; i <= 10; i++) {
+                var row = tableBody.insertRow();
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                var cell4 = row.insertCell(3);
+
+                cell1.innerHTML = i;
+                cell2.innerHTML = 'Student ' + i;
+                cell3.innerHTML = 'Grade ' + (Math.floor(Math.random() * 5) + 1); // Random grade
+                cell4.innerHTML = '<button class="delete-btn" onclick="deleteRow(this)">Delete</button>';
+            }
+        }
+
+        // Function to delete a row
+        function deleteRow(btn) {
+            var row = btn.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+        }
+
+        // Call the function to create the table
+        createTable();*/
+        
+
+        //Question No.5
+        function updateCounter(change) {
+            var counterElement = document.getElementById('counter');
+            counterElement.innerText = parseInt(counterElement.innerText) + change;
+        }
+        updateCounter();
+
+        </script>
+        
+
+</body>
+
+</html>
